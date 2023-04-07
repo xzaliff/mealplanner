@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ meal.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img [src]="meal.image" alt="{{ meal.name }} image">
+    <ion-card-header>
+      <ion-card-title>{{ meal.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{ meal.description }}</p>
+      <ul>
+        <li>Calories: {{ meal.nutrients.ENERC_KCAL }} kcal</li>
+        <li>Protein: {{ meal.nutrients.PROCNT }} g</li>
+        <li>Fat: {{ meal.nutrients.FAT }} g</li>
+        <li>Carbohydrates: {{ meal.nutrients.CHOCDF }} g</li>
+      </ul>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

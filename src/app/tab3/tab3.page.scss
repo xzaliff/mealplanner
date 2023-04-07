@@ -1,0 +1,62 @@
+page-profile {
+    // Profile Details section
+    ion-card {
+      ion-item {
+        ion-label {
+          h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 8px;
+          }
+          p {
+            font-size: 14px;
+            color: #666;
+          }
+        }
+      }
+    }
+  
+    // Notification section
+    ion-list {
+      ion-item {
+        ion-label {
+          font-size: 16px;
+          font-weight: bold;
+          color: #333;
+        }
+      }
+    }
+  
+    // Terms of Service section
+    ion-card {
+      ion-content {
+        h1 {
+          font-size: 24px;
+          font-weight: bold;
+          margin-bottom: 16px;
+        }
+        p {
+          font-size: 16px;
+          color: #666;
+          line-height: 1.4;
+        }
+      }
+    }
+  
+    // Contact Us section
+    ion-card {
+      ion-list {
+        ion-item {
+          ion-icon {
+            margin-right: 8px;
+            color: #333;
+          }
+          ion-label {
+            font-size: 16px;
+            color: #333;
+          }
+        }
+      }
+    }
+  }
+  

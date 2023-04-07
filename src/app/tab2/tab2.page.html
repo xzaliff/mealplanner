@@ -1,0 +1,93 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Meal Planner
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card class="component-card">
+    <ion-card-header>
+      <ion-card-title>Meal Plan</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Plan your meals for the week ahead</p>
+      <button ion-button full>View Plan</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="component-card">
+    <ion-card-header>
+      <ion-card-title>Recipes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Discover new recipes and add them to your meal plan</p>
+      <button ion-button full>View Recipes</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card class="component-card">
+    <ion-card-header>
+      <ion-card-title>Grocery List</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Organize your shopping list and keep track of what you need</p>
+      <button ion-button full>View List</button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button class="my-button" routerLink="/new-page">
+    <ion-icon name="add"></ion-icon>
+  </ion-button>
+  
+</ion-content>
+
+<style type="text/scss">
+
+  .component-card {
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 10px;
+  }
+
+  .component-card ion-card-header {
+    background-color: #233769;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .component-card ion-card-content {
+    padding: 20px;
+  }
+
+  .component-card p {
+    margin-bottom: 10px;
+  }
+
+  .component-card button {
+    margin-top: 10px;
+  }
+
+  .ion-content {
+  overflow-y: auto;
+  }
+
+  .my-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 49px;
+  height: 49px;
+  --background: #f5f5f5;
+  --box-shadow: none;
+}
+
+.my-button ion-icon {
+  font-size: 50px;
+  color: #0c0c0c;
+}
+
+
+</style>

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Settings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full" class="ion-margin-top ion-margin-bottom ion-padding-horizontal ion-padding-vertical" style="--ion-safe-area-top: 0px; --ion-safe-area-bottom: 0px; --ion-safe-area-start: 0px; --ion-safe-area-end: 0px; --padding-bottom: 5rem; gap: 1rem;">
+    
+    <ion-item>
+      <ion-label>Language</ion-label>
+      <ion-select [(ngModel)]="selectedLanguage">
+        <ion-select-option value="en">English</ion-select-option>
+        <ion-select-option value="fr">Français</ion-select-option>
+        <ion-select-option value="es">Español</ion-select-option>
+        <ion-select-option value="de">Deutsch</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Default Meal Plan</ion-label>
+      <ion-select [(ngModel)]="defaultMealPlan">
+        <ion-select-option value="balanced">Balanced</ion-select-option>
+        <ion-select-option value="low-carb">Low Carb</ion-select-option>
+        <ion-select-option value="keto">Keto</ion-select-option>
+      </ion-select>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label>Include Snacks</ion-label>
+      <ion-toggle [(ngModel)]="includeSnacks"></ion-toggle>
+    </ion-item>
+    
+  
+    <ion-item>
+      <ion-label>Feedback</ion-label>
+      <ion-textarea [(ngModel)]="feedback" placeholder="Leave your feedback here"></ion-textarea>
+    </ion-item>
+    
+  </ion-list>
+</ion-content>
+

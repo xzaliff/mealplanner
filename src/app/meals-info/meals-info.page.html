@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Meal Planner</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-searchbar [(ngModel)]="searchQuery" placeholder="Search meals" (ionChange)="searchFood(searchQuery)"></ion-searchbar>
+
+  <ion-list>
+    <ion-item *ngFor="let meal of meals" >
+      <ion-avatar slot="start">
+        <img [src]="meal.image">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{ meal.name }}</h2>
+        <p>{{ meal.description }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-card>
+    <img src="assets/images/meal1.jpg" alt="Example Image" class="card-image">
+    <ion-card-header>
+      <ion-card-title>Tips For healthy eating</ion-card-title>
+    </ion-card-header>
+    <ion-card-content class="card-content">
+      <ol class="card-list">
+        <li>Choose a variety of foods:</li>
+        <li>Watch your portion sizes:</li>
+        <li>Limit processed and sugary foods:</li>
+        <li>Cook at home:</li>
+        <li>Stay hydrated:</li>
+      </ol>
+    </ion-card-content>
+  </ion-card>
+  
+</ion-content>
