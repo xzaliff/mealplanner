@@ -1,9 +1,8 @@
 # mealplanner
 
-//use npm install in the project directory to install the required dependencies listed in the package.json file.
+Use npm install in the project directory to install the required dependencies listed in the package.json file.
 
-//any new update will be informed 
-//version: 0.015
+Version: 0.015
 
 
 Future works :
